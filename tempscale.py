@@ -13,18 +13,19 @@ print(digits)
 
 if scale == "c":  
     fahrenheit = digits * 1.8 + 32    #logic
-    print("Fahrenheit = ", fahrenheit) #prints answer to user
     kelvin = digits + 273.15 
-    print ("Kelvin = ", kelvin)
-
+    celsius = digits
+    
 elif scale == "f":
     celsius = (digits - 32) / 1.8
-    print("Celsius = ", celsius)
     kelvin = (digits + 459.67) * 0.55555556
-    print("Kelvin = ", kelvin)
-
+    fahrenheit = digits
+    
 elif scale == "k":
     fahrenheit = digits / 0.55555556 - 459.67
-    print("Fahrenheit = ", fahrenheit)
     celsius = digits - 273.15
-    print("Celsius= ", celsius)
+    kelvin = digits
+
+print("Your Temperature In Celsius Is", celsius)
+print("Your Temperature In Fahrenehit Is", fahrenheit)
+print("Your Temperature In Kelvin Is", kelvin)
